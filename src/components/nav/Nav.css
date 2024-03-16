@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.homeLink {
+    margin-top: 4rem;
+}
+.navList {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
