@@ -1,11 +1,13 @@
-import './Dashboard.css'
+//import './Dashboard.css'
 
-function Dashboard({children}) {
+
+function Dashboard({ children }) {
     return (
-        <div className="dashboard">
-            {children}
+        <div className="flex flex-row items-stretch h-screen bg-gray-100">
+                    {children}   
         </div>
-    )
+    );
 }
 
-export default Dashboard
+export default Dashboard;
+

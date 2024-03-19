@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import Transaction from './pages/transaction/Transaction'
 import Main from './components/main/Main'
 import Solde from './pages/solde/Solde'
+import GestionComptes from './pages/gestion/Gestion'
 
 function App() {
 
@@ -16,8 +17,10 @@ function App() {
             <Main>
               <Routes>
                     <Route path='/' element={<Home />} />
+                    <Route path='/home' element={<Home />} />
                     <Route path='/transaction' element={<Transaction />} />
                     <Route path='/solde' element={<Solde />} />
+                    <Route path='/gestion' element={<GestionComptes />} />
                     <Route />
               </Routes>
             </Main>

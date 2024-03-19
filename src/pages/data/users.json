@@ -1,0 +1,39 @@
+{
+    "users": [
+      {
+        "name": "Martin",
+        "first_name": "Pierre",
+        "date_of_birth": "01/01/1980",
+        "monthly_net_salary": 2000.00,
+        "account_number": "1234567891"
+      },
+      {
+        "name": "Dupont",
+        "first_name": "Marie",
+        "date_of_birth": "15/02/1990",
+        "monthly_net_salary": 2500.50,
+        "account_number": "9876543210"
+      },
+      {
+        "name": "Blanc",
+        "first_name": "Jean",
+        "date_of_birth": "23/04/1975",
+        "monthly_net_salary": 1850.75,
+        "account_number": "0000000001"
+      },
+      {
+        "name": "Rossi",
+        "first_name": "Sofia",
+        "date_of_birth": "10/08/1995",
+        "monthly_net_salary": 3200.25,
+        "account_number": "3456789012"
+      },
+      {
+        "name": "Lee",
+        "first_name": "Min",
+        "date_of_birth": "05/12/2000",
+        "monthly_net_salary": 1600.00,
+        "account_number": "5678901234"
+      }
+    ]
+  }
