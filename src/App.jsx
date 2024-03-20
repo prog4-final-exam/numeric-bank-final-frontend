@@ -16,7 +16,6 @@ function App() {
             <Sidebar/>
             <Main>
               <Routes>
-                    <Route path='/' element={<Home />} />
                     <Route path='/home' element={<Home />} />
                     <Route path='/transaction' element={<Transaction />} />
                     <Route path='/solde' element={<Solde />} />
