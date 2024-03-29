@@ -1,29 +1,31 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import './App.css'
-import Dashboard from './pages/dashboard/Dashboard'
-import Sidebar from './components/sidebar/Sidebar'
-import Home from './pages/home/Home'
-import Transaction from './pages/transaction/Transaction'
-import Main from './components/main/Main'
-import Solde from './pages/solde/Solde'
-
+import "./App.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./pages/home/Home";
+import Profile from "./pages/profile/Profile";
+import Approvisionnement from "./pages/approvisionnement/Approvisionnemnt";
+import Virement from "./pages/virement/Virement";
+import Dashboard from "./components/dashboard/Dashboard";
+import Sidebar from "./components/sidebar/Sidebar";
+import "../src/components/sidebar/Sidebar.css";
+import "../src/components/nav/navDashCss/content.css";
+import ContentHeader from "./components/nav/navDash/ContentHeader";
 function App() {
-
   return (
-     <BrowserRouter>
-        <Dashboard>
-            <Sidebar/>
-            <Main>
-              <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/transaction' element={<Transaction />} />
-                    <Route path='/solde' element={<Solde />} />
-                    <Route />
-              </Routes>
-            </Main>
+    <BrowserRouter>
+      <div className="content--dashboard">
+        <Sidebar className="dashboard" />
+        <Dashboard className="dashboard--content content">
+          <ContentHeader className="dashboard--content content" />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profil/:id" element={<Profile />} />
+            <Route path="/supply" element={<Approvisionnement />} />
+            <Route path="/transfer" element={<Virement />} />
+          </Routes>
         </Dashboard>
-     </BrowserRouter>
-  )
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
